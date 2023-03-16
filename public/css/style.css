@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 1px dashed red;
+}
+canvas {
+	width: 1024px;
+	height: 576px;
+	border: 5px solid black;
+}
+#container {
+	position: relative;
+	display: inline-block;
+}
+
+#statusBar {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+}
+#playerStatusBar{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	height: 30px;
+	width: 100%;
+}
+#playerHealthUnder {
+	background-color: yellow;
+	width: 100%;
+	height: 30px;
+	
+}
+#playerHealth {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	background-color: blue;
+}
+#enemyStatusBar{
+	position: relative;
+	height: 30px;
+	width: 100%;
+}
+#enemyHealthUnder {
+	background-color: yellow;
+	height: 30px;
+}
+#enemyHealth {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: blue;
+}
+#timer{
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	height: 70px;
+	width: 70px;
+}
+#result{
+	position: absolute;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
